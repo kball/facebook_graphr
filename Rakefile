@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "facebook_graphr"
     gem.summary = %Q{A gem for dealing with Facebook's new graph API}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.description = %Q{A lightweight gem for dealing with Facebook's new Open Graph API}
     gem.email = "kmball11@gmail.com"
     gem.homepage = "http://github.com/kball/facebook_graphr"
     gem.authors = ["Kevin Ball"]

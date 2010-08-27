@@ -1,6 +1,7 @@
 = facebook_graphr
 
-Description goes here.
+Facebooker does not seem to be caught up with the new Open Graph API, and I find it somewhat
+heavyweight in general.  This is an attempt at a light-weight alternative for use with the Open Graph API.
 
 == Note on Patches/Pull Requests
  
