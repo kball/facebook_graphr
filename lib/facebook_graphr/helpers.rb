@@ -2,7 +2,7 @@ module FacebookGraphr
   module Helpers
     module Init
       def init_facebook_graph_js(opts = {})
-        js_lib = opts[:js].to_sym || :jquery
+        js_lib = (opts[:js] || :jquery).to_sym
         if js_lib != :jquery
           raise "Currently unsupported JS library: #{js_lib}"
         end

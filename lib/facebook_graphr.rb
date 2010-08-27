@@ -3,7 +3,7 @@ module FacebookGraphr
  
   class << self
     attr_accessor :config
-    def self.setup(yml_file)
+    def setup(yml_file)
       hash = File.open(yml_file) do |f|
         YAML::load(f)
       end

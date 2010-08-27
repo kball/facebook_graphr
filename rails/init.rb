@@ -1,1 +1,1 @@
-ActionController.send(:helper, FacebookGraphr::Helpers::Init)
+ActionController::Base.send(:helper, FacebookGraphr::Helpers::Init)
