@@ -2,7 +2,14 @@ module FacebookGraphr
   BASE_URL = "https://graph.facebook.com/"
  
   class << self
-    attr_accessor :config
+    attr_writer :config
+    def config
+      if defined?(@config)
+        @config
+      else
+        raise "Tried to access FacebookGraphr.config without calling FacebookGraphr.setup"
+      end
+    end
     def setup(yml_file)
       hash = File.open(yml_file) do |f|
         YAML::load(f)
