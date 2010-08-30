@@ -23,5 +23,13 @@ module FacebookGraphr
         EOS
       end
     end
+    module FBML
+      # can have size => :thumb, :small, :normal, and :square
+      # :linked => true/false
+      def facebook_profile_pic(fbuid, options = {})
+        options = options.dup
+        content_tag("fb:profile-pick", nil, options.merge(:uid => fbuid))
+      end
+    end
   end
 end
