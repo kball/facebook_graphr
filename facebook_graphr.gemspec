@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
      "facebook_graphr.gemspec",
      "init.rb",
      "lib/facebook_graphr.rb",
+     "lib/facebook_graphr/controller.rb",
      "lib/facebook_graphr/helpers.rb",
      "rails/init.rb",
      "test/helper.rb",

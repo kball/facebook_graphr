@@ -8,7 +8,7 @@ module FacebookGraphr
         YAML::load(f)
       end
       self.config = if defined?(Rails)
-        hash[Rails.env].symbolize_keys
+        hash[::Rails.env].symbolize_keys
       else
         hash.symbolize_keys
       end
@@ -19,7 +19,7 @@ module FacebookGraphr
     attr_accessor :api_key, :app_id, :user_id, :access_token, :secret_key
 
     def self.new_from_cookie(cookie)
-      Rails.logger.info(cookie.inspect)
+      ::Rails.logger.info(cookie.inspect)
       cookie_hash = cookie.split("&").inject({}) do |hash, pair|
         k, v = pair.split('=')
         hash.merge(k.to_sym => v)
