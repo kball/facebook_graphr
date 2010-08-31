@@ -1,3 +1,4 @@
+require 'json'
 module FacebookGraphr
   BASE_URL = "https://graph.facebook.com"
  
