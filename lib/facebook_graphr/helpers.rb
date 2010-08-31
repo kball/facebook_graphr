@@ -28,7 +28,7 @@ module FacebookGraphr
       # :linked => true/false
       def facebook_profile_pic(fbuid, options = {})
         options = options.dup
-        content_tag("fb:profile-pick", nil, options.merge(:uid => fbuid))
+        content_tag("fb:profile-pic", nil, options.merge(:uid => fbuid))
       end
     end
   end
