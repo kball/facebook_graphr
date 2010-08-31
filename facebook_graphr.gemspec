@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{facebook_graphr}
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Kevin Ball"]
-  s.date = %q{2010-08-30}
+  s.date = %q{2010-08-31}
   s.description = %q{A lightweight gem for dealing with Facebook's new Open Graph API}
   s.email = %q{kmball11@gmail.com}
   s.extra_rdoc_files = [
@@ -48,11 +48,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+      s.add_runtime_dependency(%q<httparty>, [">= 0"])
     else
       s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+      s.add_dependency(%q<httparty>, [">= 0"])
     end
   else
     s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
+    s.add_dependency(%q<httparty>, [">= 0"])
   end
 end
 
