@@ -1,5 +1,5 @@
 module FacebookGraphr
-  BASE_URL = "https://graph.facebook.com/"
+  BASE_URL = "https://graph.facebook.com"
  
   class << self
     attr_writer :config
